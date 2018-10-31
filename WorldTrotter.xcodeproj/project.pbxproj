@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326DF45A2170F38C004E3555 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326DF4592170F38C004E3555 /* MapKit.framework */; };
+		326DF45C2170F760004E3555 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DF45B2170F760004E3555 /* MapViewController.swift */; };
 		328EE1A5215D4E06005D9038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328EE1A4215D4E06005D9038 /* AppDelegate.swift */; };
-		328EE1A7215D4E06005D9038 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328EE1A6215D4E06005D9038 /* ViewController.swift */; };
 		328EE1AA215D4E06005D9038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328EE1A8215D4E06005D9038 /* Main.storyboard */; };
 		328EE1AC215D4E08005D9038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328EE1AB215D4E08005D9038 /* Assets.xcassets */; };
 		328EE1AF215D4E08005D9038 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328EE1AD215D4E08005D9038 /* LaunchScreen.storyboard */; };
 		328EE1BA215D4E08005D9038 /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328EE1B9215D4E08005D9038 /* WorldTrotterTests.swift */; };
 		328EE1C5215D4E08005D9038 /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328EE1C4215D4E08005D9038 /* WorldTrotterUITests.swift */; };
+		328EE1D3215D603D005D9038 /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328EE1D2215D603D005D9038 /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		326DF4592170F38C004E3555 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		326DF45B2170F760004E3555 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		328EE1A1215D4E06005D9038 /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328EE1A4215D4E06005D9038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		328EE1A6215D4E06005D9038 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		328EE1A9215D4E06005D9038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		328EE1AB215D4E08005D9038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328EE1AE215D4E08005D9038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		328EE1C0215D4E08005D9038 /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		328EE1C4215D4E08005D9038 /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		328EE1C6215D4E08005D9038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328EE1D2215D603D005D9038 /* ConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326DF45A2170F38C004E3555 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		326DF4582170F38B004E3555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				326DF4592170F38C004E3555 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		328EE198215D4E06005D9038 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 				328EE1B8215D4E08005D9038 /* WorldTrotterTests */,
 				328EE1C3215D4E08005D9038 /* WorldTrotterUITests */,
 				328EE1A2215D4E06005D9038 /* Products */,
+				326DF4582170F38B004E3555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				328EE1A4215D4E06005D9038 /* AppDelegate.swift */,
-				328EE1A6215D4E06005D9038 /* ViewController.swift */,
 				328EE1A8215D4E06005D9038 /* Main.storyboard */,
+				326DF45B2170F760004E3555 /* MapViewController.swift */,
+				328EE1D2215D603D005D9038 /* ConversionViewController.swift */,
 				328EE1AB215D4E08005D9038 /* Assets.xcassets */,
 				328EE1AD215D4E08005D9038 /* LaunchScreen.storyboard */,
 				328EE1B0215D4E08005D9038 /* Info.plist */,
@@ -256,7 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				328EE1A7215D4E06005D9038 /* ViewController.swift in Sources */,
+				328EE1D3215D603D005D9038 /* ConversionViewController.swift in Sources */,
+				326DF45C2170F760004E3555 /* MapViewController.swift in Sources */,
 				328EE1A5215D4E06005D9038 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73W26BLYS6;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73W26BLYS6;
 				INFOPLIST_FILE = WorldTrotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
